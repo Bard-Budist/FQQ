@@ -53,7 +53,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Login\Login.cs" />
+     <Compile Include="Assets\Inicio.cs" />
  <Reference Include="Unity.TextMeshPro.Editor">
  <HintPath>/Users/holberton/FQQ/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
