@@ -3,6 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class Inicio : MonoBehaviour {
     public GameObject username;
@@ -11,6 +12,9 @@ public class Inicio : MonoBehaviour {
     private string Password;
     public bool UN = false;
     public bool PW = false;
+
+    public int index;
+    public string levelName;
 
     //Funcion validar el ingreso de cuenta
     public void Ingreso () {
@@ -39,6 +43,8 @@ public class Inicio : MonoBehaviour {
             print("Ingreso satisfactorio");
             username.GetComponent<InputField>().text = "";
             password.GetComponent<InputField>().text = "";
+            SceneManager.LoadScene(levelName);
+
         }
     }
     // Update is called once per frame
